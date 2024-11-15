@@ -1,0 +1,30 @@
+ legend,
+ caption {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+figure {
+	margin: 0;
+	text-align: center;
+}
+figcaption,
+figure {
+	display: block;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 1.2% auto 0;
+	max-width: 98%;
+}
+
+.wp-caption-text {
+	text-align: center;
+}

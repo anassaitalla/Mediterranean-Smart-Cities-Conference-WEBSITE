@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- <link rel="stylesheet" href="Codes/BootstrapIcons.css"> -->
+    <link rel="icon" type="image/png" href="Imgaes/logofavicon.ico" />
+    <!-- <link rel="icon" href="assets/ico/small.ico" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="Codes/BootstrapJs.js"></script>
+    <script src="Codes/Script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>MSCC2024 - Mediterranean Smart Cities Conference</title>
+    <link rel="stylesheet" href="Codes/Style.css">
+    <link rel="stylesheet" href="Codes/MediaQuery.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="loader-wrapper">
+        <div class="loader">
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div class="myContainer">
+
+
+        <div class="header pt-2  pl-2" style="background-size: cover;background-position: top;">
+            <div class="container">
+                <div class="navigation">
+                    <nav class="navbar  navbar-expand-lg  navbar-light fixed-top" id="navbar">
+                        <div class="col-md-2" id="logocontainer">
+                            <a href="#"><img class="navbar-brand p-0 " id="logo" src="Imgaes/logo.png" alt=""></a>
+                        </div>
+                        <button class="navbar-toggler bg-light p-2" type="button" data-toggle="collapse"
+                            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link navLinkItem activeNavLinkItem" onclick="handleClick(this)"
+                                        href="#">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                        href="#aboutsec">About</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                        href="#topicsSection">Topics</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link navLinkItem" onclick="handleClick(this)" href="#callSection">Call
+                                        for papers </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                        href="#speakersSection">Keynote Speakers</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link navLinkItem" onclick="handleClick(this)" href="#">Program</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                        href="Codes/Comittes.html#comitteesSection">Committees</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                        href="Codes/Exhibition.html">Exhibition</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                        href="Codes/Hackaton.html">Hackathon</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                        href="#VenueSection">Venue</a>
+                                </li>
+                            </ul>
+
+                            <div class="registrationButtonDiv">
+                                <a href="Codes/Registration.html" class="registrationButton btn">
+                                    <b> Registration </b> <i class="bi bi-person-plus-fill"></i>
+                                </a><br>
+                                <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                    style="float: left; margin-left: 20px; font-size: 14px;" href="fr/index.html">
+                                    <img src="Imgaes/FrenchFlag.png" alt="French Flag"
+                                        style="height: 26px; width: auto;">
+                                    <br><span style="margin-left: 5px; font-size: 13px;">FR</span>
+                                </a>
+                                <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                    style="float: left; margin-left: 10px; font-size: 14px;" href="ar/index.html">
+                                    <img src="Imgaes/arabFlag.png" alt="Arabic Flag" style="height: 26px; width: auto;">
+                                    <br><span style="margin-left: 5px; font-size: 13px;">AR</span>
+                                </a>
+                                <a class="nav-link navLinkItem" onclick="handleClick(this)"
+                                    style="float: left; margin-left: 10px; font-size: 14px;" href="#">
+                                    <img src="Imgaes/EngFlag.png" alt="English Flag" style="height: 26px; width: auto;">
+                                    <br><span style="margin-left: 5px; font-size: 13px;">EN</span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </nav>
+                </div>
+
+                <div class="headerContent ">
+                    <div class="mt-1  text-center">
+
+
+                        <img src="./Imgaes/ieee3.png"
+                            style="width:200px; height: 112px; float: left; margin-left: -120px;margin-top: -10px;" />
+
+                        <img src="./Imgaes/ieeenum1.png"
+                            style="width:200px; height: 22px; float: left; margin-left: -200px;margin-top: 110px;" />
+
+
+
+
+                        <h2 class="text-light">
+                            Mediterranean Smart Cities Conference <br> (MSCC 2024)
+                        </h2>
+                        <div class="small-line"></div>
+
+                        <h4 class="text-light">
+                            <i>"Unlocking the Future of Resilient Sustainable Urban Living"</i>
+                        </h4>
+                        <div class="small-line"></div>
+                        <h4><i>May 2 - 4, 2024</i></h4>
+                        <h4><i>Martil - Tetuan, Morocco</i></h4>
+                        <div class="small-line"></div>
+                        <a href="https://cmt3.research.microsoft.com/MSCC2024/Track/1/Submission/Create" target="_blank"
+                            class="btn SubmitPaper text-light mx-2 my-2">
+                            <b> Submit Paper</b>
+                        </a>
+                        <a id="aboutSection" href="#call" class="btn SubmitPaper text-light mx-2 my-2">
+                            <b> Call for papers</b>
+                        </a>
+
+                    </div>
+                    <!-- <div id="demo" class=" SubmitPaper text-light mx-2 my-2"></div> -->
+                    <div class=" "
+                        style="float: right; width: 400px; text-align:center;height:  100px; margin-top: 70px;">
+
+
+                    </div>
+                    <br>
+                    <div class="col-xl-12 col-lg-12 col-md-12" id="timer">
+                        <div class="countdown text-center card card-body bg-white-20 border-0 flex-row flex-wrap justify-content-around "
+                            id="demo">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="aboutsec"></div>
+    </div>
+
+
+    <div class="content container" id="aboutSec">
+
+        <div id="about" class="d-flex justify-content-center flex-column align-items-center text-center "
+            data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500"
+            data-aos-easing="ease-in-out">
+            <h1>About the Conference:</h1>
+            <div class="text-start mt-5 mb-5">
+                <p id="pAb">&nbsp;&nbsp;&nbsp;&nbsp; Welcome to the <strong id="strongp"> <span
+                            class="text-primary">M</span>editerranean
+                        <span class="text-primary"> S</span>mart <span class="text-primary">C</span>ities <span
+                            class="text-primary">C</span>onference </strong> taking place in the Mediterranean
+                    cities of <strong id="strongp" class="text-primary">Martil and Tetuan, Morocco,</strong> where
+                    innovation
+                    meets urban evolution in the cradle of history. Join us for a journey through the vibrant and
+                    dynamic landscape of smart cities, where tradition meets technology, and ancient streets
+                    converge with futuristic possibilities.</p>
+                <p id="topicsSection">&nbsp;&nbsp;&nbsp;&nbsp; This conference will bring together thought leaders,
+                    policymakers, urban
+                    planners, technology experts, and PhD Students to explore the future of smart cities through
+                    different activities including keynote talks, technical sessions, panels, workshops, and
+                    tutorials.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3" id="topics" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="500" data-aos-easing="ease-in-out">
+            <div class="col-md-10 offset-md-1">
+                <div class="card p-4">
+                    <h1 class="text-center mb-4">Key Topics</h1>
+                    <ul class="list-unstyled topics-list">
+                        <li><strong>Topics of the conference include but are not limited to:</strong>
+
+                        <li><strong>Smart Cities Technologies and Applications:</strong> Artificial Intelligence, Data
+                            Science, Big Data,
+                            5G, 6G, IoT, Smart Grid, Smart Education, Smart Agriculture, Smart Health, Smart Economy,
+                            Smart Mobility,
+                            Cyber Security, Smart Building and Demotic Automation, Smart Electrical / Electronic
+                            devices,
+                            Microelectronic design, Smart Services, Smart Manufacturing, etc.</li>
+                        <li><strong>Digital Transformation:</strong> Explore the role of technology in reshaping
+                            urban landscapes and enhancing citizen experiences.</li>
+                        <li><strong>Sustainable Urban Planning:</strong> Delve into sustainable development
+                            practices and their impact on the environment and quality of life.</li>
+                        <li><strong>Community Engagement:</strong> Learn how involving citizens in decision-making
+                            processes can lead to more inclusive and vibrant cities.</li>
+                        <li><strong>Data Analytics for Smart Cities:</strong> Harness the power of data to optimize
+                            urban services, from transportation to energy management.</li>
+                        <li><strong>Innovation in Infrastructure:</strong> Discover the latest trends in smart
+                            infrastructure design and implementation.</li>
+                        <li><strong>Resilience and Climate Action:</strong> Address the challenges of climate change
+                            and strategies for building resilient cities.</li>
+                        <li id="callSection"><strong>Digital Inclusion:</strong> Ensure that the benefits of smart
+                            cities are accessible to all, bridging the digital divide.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 p-3 CallforPapers" id="call" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="500" data-aos-easing="ease-in-out">
+            <div class="row mt-5 align-items-center ">
+                <h1 class="text-center">Call for Papers</h1>
+
+                <div class="col-md-5 d-flex">
+                    <img src="Imgaes/ieee3.png" alt="Sponsor 2" style="width: 80%;">
+                </div>
+                <div class="col-md-7">
+                    <div class="card p-4 ">
+                        <h2 class="text-center mb-4" style="color: var(--link-color);">Important Dates</h2>
+                        <ul class="list-unstyled papers-list">
+                            <li>
+                                <span class="event m-1 "><b>Last Paper Submission <span class="event text-danger">
+                                            extended</span> Deadline <del class="text-primary">January 31,
+                                            2024</del></b></span>
+                                <span class="date text-danger">March 3rd, 2024</span>
+                            </li>
+                            <li>
+                                <span class="event m-1"><b>Paper Acceptance <del class="text-primary">February 20,
+                                            2024</del></b></span>
+                                <span class="date">March 25th, 2024</span>
+                            </li>
+                            <li>
+                                <span class="event m-1"><b>Camera-ready <del class="text-primary">March 15,
+                                            2024</del></b></span>
+                                <span class="date">April 5th, 2024</span>
+                            </li>
+                            <li>
+                                <span class="event m-1"><b>Registration <del class="text-primary">March 15,
+                                            2024</del></b></span>
+                                <span class="date">April 5th, 2024</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 mt-1">
+                <div class="col-md-12">
+                    <div class="pt-4">
+                        <h2 class="text-center mb-4" style="color: var(--link-color);">Instructions to Authors</h2>
+                        <h5>
+                            Prospective authors are invited to submit papers using the <span
+                                class="text-primary"><b>Microsoft Conference Management Toolkit. </b></span>
+                            The authors will need to register their email with CMT. Here is a link how to <a
+                                href="https://cmt3.research.microsoft.com/docs/help/general/account-creation.html"><u>create
+                                    a CMT account</u></a>.
+                        </h5>
+                        <h5>
+                            All papers must adhere to the following formatting:
+                        </h5>
+                        <ul>
+                            <li class="h5">Papers should be original and not currently under review at another
+                                venue.</li>
+                            <li class="h5">Conference language is English, no exceptions.</li>
+                            <li class="h5">Papers accepted only in PDF format, unlocked.</li>
+                            <li class="h5">Number of pages per paper is 4 to 6.</li>
+                            <li class="h5">Basic guidelines for preparing papers for conference proceedings are
+                                available in TEMPLATE (.DOCX) (based on IEEE® Template).</li>
+
+                            <div class="text-center mt-4">
+                                <a href="Files/MSCC2024-paper-requirements.docx"
+                                    download="MSCC2024-paper-requirements.docx" class="btn PaperTemplate mx-2"><b> Paper
+                                        Template</b> <i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                                <a href="https://cmt3.research.microsoft.com/MSCC2024/Track/1/Submission/Create"
+                                    target="_blank" class="btn SubmitPaper text-light mx-2">
+                                    <b> Submit Your Paper</b>
+                                    <i class="bi bi-file-arrow-up-fill SubmitPaperIcon"></i>
+                                </a>
+                                <a href="Codes/Registration.html" target="_blank"
+                                    class="btn SubmitPaper text-light mx-2">
+                                    <b> Registration</b>
+
+                                </a>
+
+                            </div>
+
+
+                            <li class="h5"><span class="text-danger">Publication options: </span><br>
+                                - Accepted papers will be submitted for inclusion into <span
+                                    class="text-primary"><b>IEEE Xplore </b></span> subject to
+                                meeting <span class="text-primary"><b>IEEE Xplore’s </b></span>scope and quality
+                                requirements.<br>
+                                <div class="d-flex justify-content-center">
+                                    <img src="Imgaes/ieeexplore.png" style="height: 205px;width: 454px" alt="">
+                                </div>
+                                <br> <br>
+                                - Authors of selected papers will be invited to submit an extended version of their
+                                manuscripts for journal publication in a special issues/sections of <span
+                                    class="text-primary"><b>relevant
+                                        and renowned journals (Scopus indexed Journals). </b></span> <br>
+
+                                <br>
+                                - Publications/Proceeding will be indexed by : <br> <br>
+                                <div class="d-flex justify-content-center">
+                                    <img src="Imgaes/scopus.jpg" style="height: 102px;width: 294px" alt="">
+                                </div>
+
+
+                                - Selected of submitted papers may be recommended for publication in Special Issues
+                                titled:
+                                <span class="text-primary"><b>"Selected Problems Arising in the Development of
+                                        Sustainable Transport Systems" </b></span>of Sustainability journal and
+                                <span class="text-primary"><b>"Methods and Technologies to Support Energy Management
+                                        Decision Making in the Transport Sector" </b></span>
+                                of Energies journal with special discount.
+
+                                <div class="sponsor-images">
+                                    <div class="sponsor">
+                                        <img src="Imgaes/sustainability.jpg" style="height: 65px;width: 309px" alt="">
+                                    </div>
+                                    <div class="sponsor">
+                                        <img src="Imgaes/Energies.png" style="height: 79px;width: 310px" alt="">
+                                    </div>
+                                </div>
+                                <br>
+                                - Authors of selected papers will be invited to submit an extended version of their
+                                manuscripts to the : <span class="text-primary"><b>"Scalable Computing: Practice and
+                                        Experience Journal".</b></span>
+                                <div class="sponsor-images">
+                                    <div class="sponsor">
+                                        <img src="Imgaes/scpe1.jpeg" alt="">
+                                    </div>
+
+                                </div>
+                                <P id="speakersSection"> </p>
+                                - Other indexed journals will to be announced soon.
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-10 mt-5 offset-md-1 aos-init aos-animate" id="speakers" data-aos="fade-up" data-aos-offset="200"
+        data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
+        <div class=" p-4">
+            <h1 class="text-center mb-4">Keynote Speakers</h1>
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/karim.jpg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Karim Dasuki</b></h4>
+                        <p>Universidad de Cartagena, Colombia.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/PrEssaaidi.jpg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Mohamed Essaaidi</b></h4>
+                        <p>Expert Smart City IEEE</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/yacine.jpg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Yacine Ghamri-Doudane</b></h4>
+                        <p>La Rochelle University, France</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/speaker0.png" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Suhono Harso Supangkat</b> </h4>
+                        <p>Director, Smart Cities and Communities Innovation Center, Bandung,&nbsp;Indonesia</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/kadili.jpg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Abdelilah Kadili</b> </h4>
+                        <p>President of Tamkine Foundation, Morocco</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/Grace.jpg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Grace Kimaru</b></h4>
+                        <p>Cities and Climate Change Advocate,&nbsp;Kenya</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/speaker1.png" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Tarik Moudni</b> </h4>
+                        <p>Director of STM Morocco</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/kishor.jpeg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Kishor Narang</b> </h4>
+                        <p>Vice President - Strategy & Governance - Joint Working Group on Smart Cities Reference
+                            Architecture within SyC Smart Cities & ISO TC 268</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/david.jpg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>David Olatunji</b></h4>
+                        <p>President/Founder at African Smart Cities Innovation Foundation, Nigeria</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/Piyoosh1.jpg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Piyoosh Palan</b></h4>
+                        <p>Templar Executives,&nbsp;UK</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/peter.jpg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Aewon Peter Chun</b></h4>
+                        <p>President at World Smart Cities Forum (WSCF) – South Korea</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4">
+                    <div class="speaker-card text-center">
+                        <img src="Imgaes/Rocamora.jpg" class="img-fluid rounded mb-3" alt="Speaker">
+                        <h4><b>Manuel Rocamora</b></h4>
+                        <p>Carbonless Asia &amp; World Smart Cities&nbsp;Forum,&nbsp;KSA</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div id="programSection" style="height: 100px;"></div>
+
+    <!-- <div class="container mt-5" id="program" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="500" data-aos-easing="ease-in-out"> -->
+    <!-- <div class="row">
+            <h1 class="text-center mb-4">Conference Program</h1>
+            <div class="col-md-10 offset-md-1 ">
+                <div class="Workshop p-4 rounded text-center">
+                    <h4 style="color: var(--link-color);font-weight: 600;" class=" p-4">To Be Announced Later...
+                    </h4>
+                </div>
+            </div>
+        </div>-->
+    <!-- <div id="exhibitionSection" style="height: 100px;"></div>
+        <div class="row">
+            <h1 class="text-center mb-4">Exhibition</h1>
+            <div class="col-md-10 offset-md-1 ">
+                <div class="Workshop p-4 rounded text-center">
+                    <h4 style="color: var(--link-color);font-weight: 600;" class=" p-4">To Be Announced soon...</h4>
+                </div>
+            </div>
+        </div> -->
+
+    <div class="mt-5  d-none">
+        <div class="col-md-10 justify-content-center d-flex offset-md-1">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link programButton active bg-success text-light" id="day1-tab"
+                        data-bs-toggle="tab" data-bs-target="#day1" type="button" role="tab" aria-controls="day1"
+                        aria-selected="true">
+                        Day 1 <br> Thu, 02/05/2024
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link programButton" id="day2-tab" data-bs-toggle="tab" data-bs-target="#day2"
+                        type="button" role="tab" aria-controls="day2" aria-selected="false">
+                        Day 2 <br> Fri, 03/05/2024
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link programButton" id="day3-tab" data-bs-toggle="tab" data-bs-target="#day3"
+                        type="button" role="tab" aria-controls="day3" aria-selected="false">
+                        Day 2 <br> Sat, 04/05/2024
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10 " data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500"
+            data-aos-easing="ease-in-out">
+            <div class="tab-content justify-content-center d-flex offset-md-1" id="myTabContent">
+                <div class="tab-pane fade show active col-md-10 offset-md-1" id="day1" role="tabpanel"
+                    aria-labelledby="day1-tab">
+                    <div class="accordion" id="accordionDayOne">
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingOne">
+                                <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <span class="text-success">9:00 AM - 9:25 AM</span>
+                                </div>
+
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show showContent"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionDayOne">
+                                <div class="accordion-body">
+                                    <strong>Virtual Platform and Networking area opening.</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingTwo">
+                                <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="text-success">9:25 AM - 9:30 AM</span>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionDayOne">
+                                <div class="accordion-body">
+                                    <strong>Welcome by Forum Europe</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="headingThree">
+                                <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="text-success">9:30 AM - 10:00 AM</span>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionDayOne">
+                                <div class="accordion-body">
+                                    <strong>Keynote Session and Q&A.</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade col-md-10 offset-md-1" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                    <div class="accordion" id="accordionDayTwo">
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="Day2-headingOne">
+                                <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#Day2-collapseOne" aria-expanded="false"
+                                    aria-controls="Day2-collapseOne">
+                                    <span class="text-success">9:00 AM - 9:25 AM</span>
+                                </div>
+                            </div>
+                            <div id="Day2-collapseOne" class="accordion-collapse collapse show showContent"
+                                aria-labelledby="Day2-headingOne" data-bs-parent="#accordionDayTwo">
+                                <div class="accordion-body">
+                                    <strong class="text-dark"><b>Platform opening and visit of the virtual City
+                                            Innovation Hub</b></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="Day2-headingTwo">
+                                <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#Day2-collapseTwo" aria-expanded="false"
+                                    aria-controls="Day2-collapseTwo">
+                                    <span class="text-success">9:25 AM - 9:30 AM</span>
+                                </div>
+                            </div>
+                            <div id="Day2-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="Day2-headingTwo" data-bs-parent="#accordionDayTwo">
+                                <div class="accordion-body">
+                                    <strong class="text-dark"><b>Platform opening and visit of the virtual City
+                                            Innovation Hub</b></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="Day2-headingThree">
+                                <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#Day2-collapseThree" aria-expanded="false"
+                                    aria-controls="Day2-collapseThree">
+                                    <span class="text-success">9:30 AM - 10:00 AM</span>
+                                </div>
+                            </div>
+                            <div id="Day2-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="Day2-headingThree" data-bs-parent="#accordionDayTwo">
+                                <div class="accordion-body">
+                                    <strong class="text-dark"><b>Platform opening and visit of the virtual City
+                                            Innovation Hub</b></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade col-md-10 offset-md-1" id="day3" role="tabpanel" aria-labelledby="day3-tab">
+                    <div class="accordion" id="accordionDayThree">
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="Day3-headingOne">
+                                <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#Day3-collapseOne" aria-expanded="false"
+                                    aria-controls="Day3-collapseOne">
+                                    <span class="text-success">9:00 AM - 9:25 AM</span>
+                                </div>
+                            </div>
+                            <div id="Day3-collapseOne" class="accordion-collapse collapse show showContent"
+                                aria-labelledby="Day3-headingOne" data-bs-parent="#accordionDayThree">
+                                <div class="accordion-body">
+                                    <strong class="text-dark"><b>Platform opening and visit of the virtual City
+                                            Innovation Hub</b></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="Day3-headingTwo">
+                                <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#Day3-collapseTwo" aria-expanded="false"
+                                    aria-controls="Day3-collapseTwo">
+                                    <span class="text-success">9:00 AM - 9:25 AM</span>
+                                </div>
+                            </div>
+                            <div id="Day3-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="Day3-headingTwo" data-bs-parent="#accordionDayThree">
+                                <div class="accordion-body">
+                                    <strong class="text-dark"><b>Platform opening and visit of the virtual City
+                                            Innovation Hub</b></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="Day3-headingThree">
+                                <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#Day3-collapseThree" aria-expanded="false"
+                                    aria-controls="Day3-collapseThree">
+                                    <span class="text-success">9:00 AM - 9:25 AM</span>
+                                </div>
+                            </div>
+                            <div id="Day3-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="Day3-headingThree" data-bs-parent="#accordionDayThree">
+                                <div class="accordion-body">
+                                    <strong class="text-dark"><b>Platform opening and visit of the virtual City
+                                            Innovation Hub</b></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- 
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <h2 style="color: var(--link-color);">Stakeholder:</h2>
+                    <ul style="font-size: 20px;">
+                        <li >
+                            <b>Government Leaders:</b> Representatives from local and national governments shaping smart city policies and initiatives.
+                        </li>
+                        <li>
+                            <b>Tech Innovators:</b> Companies and startups driving innovation in urban technology solutions.
+                        </li>
+                        <li>
+                            <b>Academics:</b> Researchers and educators in fields related to urban studies, technology, and sustainability.
+                        </li>
+                        <li>
+                            <b>Industry:</b> Experts from various sectors providing products and services for smart city projects.
+                        </li>
+                        <li>
+                            <b>Civil Society Organizations:</b> Non-profits and advocacy groups focused on urban sustainability and citizen engagement.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+    <div class=" p-4">
+        <h1 class="text-center mb-4">Global Emerging Smart Cities Awards</h1>
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-md-3 mb-4">
+                <div class="speaker-card text-center">
+                    <img src="Imgaes/Istanbul.png" style="width: 300px;height: 200px;" class="img-fluid rounded mb-3"
+                        alt="Speaker">
+                    <h4><b>Istanbul, Turkey</b> </h4>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="speaker-card text-center">
+                    <img src="Imgaes/Berkane.png" style="width: 300px;height: 200px;" class="img-fluid rounded mb-3"
+                        alt="Speaker">
+                    <h4><b>Berkane, Morocco</b> </h4>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container mt-5" id="organizers" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="500" data-aos-easing="ease-in-out">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <h1 class="text-center">ORGANIZERS</h1>
+                <div class="sponsor-images">
+                    <div class="sponsor">
+                        <img src="Imgaes/uae.png" alt="Sponsor 1">
+                    </div>
+                    <div class="sponsor pt-4">
+                        <img src="Imgaes/ensnew.png" style="height: 180px;width: 180px" alt="Sponsor 1">
+                    </div>
+                    <div class="sponsor">
+                        <img src="Imgaes/emsii.jpg" alt="Sponsor 2">
+                    </div>
+
+
+                    <!-- <div class="sponsor">
+                            <img src="Imgaes/UCLGA.png" alt="Sponsor 2">
+                        </div>
+                        <div class="sponsor">
+                            <img src="Imgaes/isescoo.jpg" alt="Sponsor 2">
+                        </div>
+                        <div class="sponsor">
+                            <img src="Imgaes/unesco2.jpg" alt="Sponsor 7">
+                        </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container mt-5" id="sponsors">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <h1 class="text-center">SPONSORS & PARTNERS</h1>
+                <div class="sponsor-images">
+                    <div class="sponsor pt-4">
+                        <img src="Imgaes/ieeesmart.jpg" alt="Sponsor 2">
+                    </div>
+                    <div class="sponsor pt-2">
+                        <img src="Imgaes/pnud.png" style="height: auto; width: 100px" alt="Sponsor 1">
+                    </div>
+
+                    <div class="sponsor pt-5">
+                        <img src="Imgaes/sccic.jpg" alt="Sponsor 1">
+                    </div>
+
+                    <div class="sponsor pt-3">
+                        <img src="Imgaes/AFSCI2.png" style="height: auto;width: 265px" alt="Sponsor 1">
+                    </div>
+                </div>
+
+
+                <div class="sponsor-images">
+
+                    <div class="sponsor">
+                        <img src="Imgaes/Mediaq.png" style="height: 230px;width: 175px" alt="Sponsor 2">
+                    </div>
+
+                    <div class="sponsor pt-3">
+                        <img src="Imgaes/WSCF.jpg" style="height: auto;width: 240px" alt="Sponsor 11">
+                    </div>
+
+
+                    <div class="sponsor">
+                        <img src="Imgaes/region.jpeg" alt="Sponsor 2">
+                    </div>
+
+                    <div class="sponsor pt-5">
+                        <img src="Imgaes/UCLGA.png" style="height: auto;width: 300px" alt="Sponsor 2">
+                    </div>
+
+                    <div class="sponsor">
+                        <img src="Imgaes/tetouan.png" alt="tetouan">
+                    </div>
+                    <div class="sponsor">
+                        <img src="Imgaes/jamaa-chefchaouen.jpg" style="height: 230px;width: 175px" alt="Sponsor 2">
+                    </div>
+                    <div class="sponsor pt-4">
+                        <img src="Imgaes/jmartil2.jpg" alt="Sponsor 2">
+                    </div>
+                    <div class="sponsor">
+                        <img src="Imgaes/jamaa-mediaq.png" alt="Sponsor 2">
+                    </div>
+                    <div class="sponsor">
+                        <img src="Imgaes/tamkin.png" style="height: auto;width: 300px" alt="Sponsor 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="VenueSection" style="height: 100px;"></div>
+    <center>
+
+        <img src="https://s01.flagcounter.com/countxl/OMnd/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_3/labels_1/pageviews_1/flags_0/percent_0/"
+            alt="Flag Counter" border="0">
+    </center>
+    <div class="container my-5" id="Venue" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="500" data-aos-easing="ease-in-out">
+
+        <div class="row ">
+
+            <h1 class="text-center"><strong>Event Location</strong></h1>
+            <p class="text-center mb-4" style="color: var(--color3);">Ecole Normale Supérieure, Martil, Morocco</p>
+            <div class="col-md-12 justify-content-center d-flex">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4220.689866621249!2d-5.280635154865267!3d35.619431877955364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b44d173337dd5%3A0xffb4711fe29a3692!2sEcole%20Normale%20Sup%C3%A9rieure%20T%C3%A9touan!5e0!3m2!1sfr!2sma!4v1699014670690!5m2!1sfr!2sma"
+                        width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container " id="ScrollIcon">
+        <a href="#"><i id="scrollToTopIcon" class="bi bi-arrow-up-circle-fill h1"></i></a>
+    </div>
+
+
+    <footer class="footer">
+        <h3 class="text-center mt-2">The Mediterranean Smart Cities Conference</h3>
+        <h4 class="text-center mt-2 "><a class="text-light" style="text-decoration: none;"
+                href="mailto:info@MSCC.org"><i class="bi bi-envelope-fill"></i> - info@MSCC.org</a></h4>
+
+        <p class="text-center mt-1 text-light">Copyright &copy; <span id="currentYear"></span> - <b>MSCC <span
+                    id="nextYear"></span> </b> </p>
+
+    </footer>
+
+    </div>
+    <script src="Codes/Script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarToggle = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+
+            navbarToggle.addEventListener('click', function () {
+                navbarCollapse.classList.toggle('show');
+            });
+
+        });    
+    </script>
+    <script>
+        loaders = document.getElementsByClassName('loader-wrapper');
+        // loaders[0].style.display = "inherit";
+
+        function change(self) {
+            for (var i = loaders.length - 1; i >= 0; i--) {
+                // loaders[i].style.display = "none";
+            }
+            id = self.id;
+            // loaders[id - 1].style.display = "block";
+        };
+    </script>
+</body>
+
+
+</html>

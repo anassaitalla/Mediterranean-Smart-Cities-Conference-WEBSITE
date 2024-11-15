@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> MSCC2024 - Session 7  &#8211; Smart Health</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main2.css" rel="stylesheet">
+    <link href="assets/css/carousel.css" rel="stylesheet">
+    <link rel="SHORTCUT ICON" href="assets/img/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+<!-- Navigation -->
+<nav id="custom-nav" class="navbar navbar-default navbar-fixed-top navigation" role="navigation">
+    <div class="container navigation-container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header navigation-header">
+            <a class="navbar-brand navigation-logo" href="../index.html"><img src="assets/img/head.png" class="img-con img-responsive" alt="logo"  /></a>
+        </div>
+        
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <!-- <div class="col-xs-3">
+            <ul class="nav nav-pills nav-stacked side-bare side-bare-hom">
+
+           		<li class="panel collapse">
+                    <a href="topics.html" class="dropdown-toggle panel-heading sildDown-togel"   aria-expanded="false" aria-controls="collapse-formTopics">Topics</a>
+                    
+                </li>
+
+
+
+				
+                <li class="panel collapse">
+                    <a href="#collapse-formWork" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formWork" onclick="changeIcon()">Panels<i id="icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formWork" role="menu">
+                        <li><a href="panel-1.html">&nbsp;&nbsp;P1:&nbsp;Smart Strategies for Resilient Cities</a></li>
+                        <li><a href="panel-2.html">&nbsp;&nbsp;P2:&nbsp;ICESCO SC initiatives</a></li>
+                        <li><a href="panel-3.html">&nbsp;&nbsp;P3:&nbsp;Smart City Water Sustainability</a></li>
+                        <li><a href="panel-4.html">&nbsp;&nbsp;P4:&nbsp;Empowering Smart City Applications</a></li>
+                        <li><a href="panel-5.html">&nbsp;&nbsp;P5:&nbsp;Morocco's Smart City Initiatives</a></li>
+                    </ul>
+                </li>
+
+                <li class="panel collapse">
+                    <a href="#collapse-formSpecialSessions" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formSpecialSessions" onclick="changeIcon2()">Sessions<i id="session-icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formSpecialSessions" role="menu">
+                        <li><a href="Session-1.html">&nbsp;&nbsp;Session 1&nbsp;</a></li>
+                        <li><a href="Session-2.html">&nbsp;&nbsp;Session 2&nbsp;</a></li>
+                        <li><a href="Session-3.html">&nbsp;&nbsp;Session 3&nbsp;</a></li>
+                        <li><a href="Session-4.html">&nbsp;&nbsp;Session 4&nbsp;</a></li>
+                        <li><a href="Session-5.html">&nbsp;&nbsp;Session 5&nbsp;</a></li>
+                        <li><a href="Session-6.html">&nbsp;&nbsp;Session 6&nbsp;</a></li>
+                        <li><a href="Session-7.html">&nbsp;&nbsp;Session 7&nbsp;</a></li>
+                    </ul>
+                </li>
+
+
+
+
+
+
+                <li class="panel collapse">
+                    <a href="hackathon.html">Hackathon</a>
+                </li>
+
+
+
+                <li class="panel collapse">
+                    <a href="#collapse-formSess" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formSess" onclick="changeIcon4()">Submissions<i id="submissions" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse in" id="collapse-formSess" role="menu">
+
+                        <li><a href="session-w1.html">&nbsp;&nbsp;Submissions W1</a></li>
+                        <li><a href="session-w2.html">&nbsp;&nbsp;Submissions W2</a></li>
+                        <li><a href="session-w3.html">&nbsp;&nbsp;Submissions W3</a></li>
+                        <li><a href="session-w4.html">&nbsp;&nbsp;Submissions W4</a></li>
+                        <li><a href="session-w5.html">&nbsp;&nbsp;Submissions W5</a></li>
+                        
+                        <li> <div class="dividers2"></div> </li>   
+
+                        <li><a href="special_session-1.html">&nbsp;&nbsp;Submissions SS1</a></li>
+                        <li><a href="special_session-2.html">&nbsp;&nbsp;Submissions SS2</a></li>
+                        <li><a href="special_session-3.html">&nbsp;&nbsp;Submissions SS3</a></li>
+                        <li><a href="special_session-4.html">&nbsp;&nbsp;Submissions SS4</a></li>
+                                             
+                    </ul>
+                </li>
+
+                
+
+	       <li class="panel collapse">
+                    <a href="#collapse-formCom" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formCom"  onclick="changeIcon3()">Committees<i  id="committee-icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formCom" role="menu">
+                     
+                        <li><a href="Chairs.html">&nbsp;&nbsp;Conference Chairs </a></li>
+			             <li><a href="TechnicalProgramCommittee.html">&nbsp;&nbsp;Technical&nbsp;Program&nbsp;Committee </a></li>
+                        <li><a href="OrganizingCommittee.html">&nbsp;&nbsp;Local&nbsp;Organizing&nbsp;Committee</a></li>
+                     </ul>
+                </li>
+
+                
+				<li class="panel collapse">
+                    <a href="../files/MSCC2024-Program.pdf" class="dropdown-toggle panel-heading sildDown-togel"   aria-expanded="false" aria-controls="collapse-formProg">Program&nbsp;(pdf)</a>
+                    
+                </li>
+
+
+            </ul>
+            <script>
+                function changeIcon() {
+                    var icon = document.getElementById('icon');
+                    if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                        icon.classList.remove('glyphicon-triangle-bottom');
+                        icon.classList.add('glyphicon-triangle-top');
+                    } else if (icon.classList.contains('glyphicon-triangle-top')){
+                        icon.classList.remove('glyphicon-triangle-top');
+                        icon.classList.add('glyphicon-triangle-bottom');
+                    }
+                }
+                function changeIcon2() {
+                    var icon = document.getElementById('session-icon');
+                    if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                        icon.classList.remove('glyphicon-triangle-bottom');
+                        icon.classList.add('glyphicon-triangle-top');
+                    } else if (icon.classList.contains('glyphicon-triangle-top')){
+                        icon.classList.remove('glyphicon-triangle-top');
+                        icon.classList.add('glyphicon-triangle-bottom');
+                    }
+                }
+                function changeIcon3() {
+                    var icon = document.getElementById('committee-icon');
+                    if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                        icon.classList.remove('glyphicon-triangle-bottom');
+                        icon.classList.add('glyphicon-triangle-top');
+                    } else if (icon.classList.contains('glyphicon-triangle-top')){
+                        icon.classList.remove('glyphicon-triangle-top');
+                        icon.classList.add('glyphicon-triangle-bottom');
+                    }
+                }
+
+            </script>
+        </div> -->
+        <div class="col-xs-4">
+            <ul class="menuUL nav nav-pills nav-stacked side-bare side-bare-hom">
+
+                <li class="panel collapse">
+                    <a href="topics.html" class="dropdown-toggle panel-heading sildDown-togel"   aria-expanded="false" aria-controls="collapse-formTopics">Topics</a>
+                    
+                </li>
+                <li class="panel collapse">
+                    <a href="#collapse-formWork" class="dropdown-toggle panel-heading sildDown-togel" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formWork" onclick="changeIcon()">Panels<i id="icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formWork" role="menu">
+                        
+                        <li><a href="panel-1.html">&nbsp;&nbsp;P1:&nbsp;Smart Strategies for Resilient Cities</a></li>
+                        <div class="dividers2"></div>  
+                        <li><a href="panel-2.html">&nbsp;&nbsp;P2:&nbsp;ICESCO SC initiatives</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="panel-3.html">&nbsp;&nbsp;P3:&nbsp;Smart City Water Sustainability</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="panel-4.html">&nbsp;&nbsp;P4:&nbsp;Empowering Smart City Applications</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="panel-5.html">&nbsp;&nbsp;P5:&nbsp;Morocco's Smart City Initiatives</a></li>
+                    </ul>
+                </li>
+                <li class="panel collapse">
+                    <a href="#collapse-formSpecialSessions" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formSpecialSessions" onclick="changeIcon2()">Sessions<i id="session-icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formSpecialSessions" role="menu">
+                        <li><a href="Session-1.html">&nbsp;&nbsp;Session 1&nbsp;</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="Session-2.html">&nbsp;&nbsp;Session 2&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-3.html">&nbsp;&nbsp;Session 3&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-4.html">&nbsp;&nbsp;Session 4&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-5.html">&nbsp;&nbsp;Session 5&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-6.html">&nbsp;&nbsp;Session 6&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-7.html">&nbsp;&nbsp;Session 7&nbsp;</a></li>
+                    </ul>
+                </li>
+                
+                <li class="panel collapse">
+                    <a href="#collapse-formSess" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formSess" onclick="changeIcon4()">Submissions<i id="submissions" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse in" id="collapse-formSess" role="menu">
+
+                        <li><a href="submission-s1.html">&nbsp;&nbsp;Submissions S1</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s2.html">&nbsp;&nbsp;Submissions S2</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s3.html">&nbsp;&nbsp;Submissions S3</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s4.html">&nbsp;&nbsp;Submissions S4</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s5.html">&nbsp;&nbsp;Submissions S5</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s6.html">&nbsp;&nbsp;Submissions S6</a></li>
+                        <div class="dividers2"></div> 
+                        <li class="activ"><a href="submission-s7.html">&nbsp;&nbsp;Submissions S7</a></li>             
+                    </ul>
+                </li>
+
+                <li class="panel collapse">
+                    <a href="hackathon.html">Hackathon</a>
+                </li>
+                
+        
+                <li class="panel collapse">
+                    <a href="#collapse-formCom" class="dropdown-toggle panel-heading sildDown-togel" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formCom" onclick="changeIcon3()">Committees<i id="committee-icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formCom" role="menu">
+                        <li><a href="Chairs.html">&nbsp;&nbsp;Conference Chairs </a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="TechnicalProgramCommittee.html">&nbsp;&nbsp;Technical Program Committee </a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="OrganizingCommittee.html">&nbsp;&nbsp;Local Organizing Committee</a></li>
+                    </ul>
+                </li>
+        
+
+        
+                <li class="panel collapse">
+                    <a href="../files/MSCC2024-Program.pdf" class="dropdown-toggle panel-heading sildDown-togel" aria-expanded="false" aria-controls="collapse-formProg">Program&nbsp;(pdf)</a>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <script>
+            function changeIcon() {
+                var icon = document.getElementById('icon');
+                if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                    icon.classList.remove('glyphicon-triangle-bottom');
+                    icon.classList.add('glyphicon-triangle-top');
+                } else if (icon.classList.contains('glyphicon-triangle-top')){
+                    icon.classList.remove('glyphicon-triangle-top');
+                    icon.classList.add('glyphicon-triangle-bottom');
+                }
+            }
+            function changeIcon2() {
+                var icon = document.getElementById('session-icon');
+                if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                    icon.classList.remove('glyphicon-triangle-bottom');
+                    icon.classList.add('glyphicon-triangle-top');
+                } else if (icon.classList.contains('glyphicon-triangle-top')){
+                    icon.classList.remove('glyphicon-triangle-top');
+                    icon.classList.add('glyphicon-triangle-bottom');
+                }
+            }
+            function changeIcon3() {
+                var icon = document.getElementById('committee-icon');
+                if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                    icon.classList.remove('glyphicon-triangle-bottom');
+                    icon.classList.add('glyphicon-triangle-top');
+                } else if (icon.classList.contains('glyphicon-triangle-top')){
+                    icon.classList.remove('glyphicon-triangle-top');
+                    icon.classList.add('glyphicon-triangle-bottom');
+                }
+            }
+
+        </script>
+        
+        <div class="content col-xs-8">  
+
+<a href="#paper_45">45</a> - 
+<a href="#paper_49">49</a> - 
+<a href="#paper_53">53</a> - 
+<a href="#paper_59">59</a> - 
+<a href="#paper_65">65</a> - 
+<a href="#paper_70">70</a> - 
+<a href="#paper_81">81</a> - 
+<a href="#paper_83">83</a> - 
+<a href="#paper_115">115</a> - 
+<a href="#paper_116">116</a> - 
+<a href="#paper_129">129</a> - 
+<a href="#paper_132">132</a> - 
+            <h1 class="text-center">Session 7  &#8211; Smart Health  <br/><b class="text-center"> -- Oral -- </b></h1> <br/> <center> <b>(Will be submitted to IEEE when the authors respect IEEE requirements)</b> </center>
+<!----------------------- Start MSCC2024_paper_45.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_45"></div>  <a href="../papers/MSCC2024_paper_45.pdf"> 
+                       [45] Enhancement of Diabetic Retinopathy Prediction-Based Capsule Network and DenseNet-121 Utilizing Wavelet Decomposition  
+                    </a> 
+                    <p> 
+                      oulhadj, mohammed*; RIFFI, JAMAL; Khodriss , Chaimae; MAHRAZ, MOHAMED ADNANE; YAHYAOUY, Ali; Abdellaoui , Meriem; Andaloussi , Idriss Benatiya ; tairi, hamid 
+                    </p>  
+                    <div id="footter00045">
+                        <a class="btn btn-default btnView" href="#collapse-form00045" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form00045"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_45.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form00045"> 
+                            Diabetic retinopathy is a medical condition connected with the leakage of blood vessels in the retina, which can potentially lead to vision loss. This medical condition impacts a broad population of people, particularly those suffering from diabetes. The worst challenge about this medical condition is that it appears without any symptoms during its initial stage, which makes its detection at an early stage a very challenging task, especially since its treatment is based on the early detection task. In this paper, we shall propose a new automatic approach for early and severity-stage diabetic retinopathy detection based on DenseNet-121 and capsule network architectures, in addition to the discrete wavelet transform in the preprocessing step. However, the proposed approach generated an advanced image using the DWT technique to feed it to the model. The model starts with the DenseNet-121 architecture and transfers the pieces of information to the capsule network to make decisions. In order to validate this approach, we used the APTOS dataset, and as a result, we achieved a good accuracy score of 86.72%. <br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_45.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_49.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_49"></div>  <a href="../papers/MSCC2024_paper_49.pdf"> 
+                       [49] Enhanced Brain Tumor Segmentation via Transfer Learning and Attention Mechanism   
+                    </a> 
+                    <p> 
+                      ABOUSSALEH, Ilyasse*; RIFFI, JAMAL; KHALID, EL FAZAZY; MAHRAZ, MOHAMED ADNANE; Tairi, Hamid 
+                    </p>  
+                    <div id="footter00049">
+                        <a class="btn btn-default btnView" href="#collapse-form00049" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form00049"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_49.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form00049"> 
+                            Brain tumor segmentation involves the crucial process of distinguishing diseased regions within the brain from healthy tissue in medical imaging, playing a crucial role in diagnosis and treatment planning for brain tumors. Deep learning, particularly encoder-decoder architectures, has recently demonstrated significant advancements in this field. This study explores the application of transfer learning and the attention mechanism to develop various models for brain tumor segmentation tasks. By fine-tuning three established pre-trained models (VGG19, ResNet50, and MobileNetV2) during the encoder phase, we aim to enhance the recognition of pertinent features for this specific task. Additionally, integrating the attention mechanism in the decoder phase enables selective focus on specific features within the input feature map, facilitating the preservation of fine details while disregarding irrelevant information. Extensive experiments are conducted on the publicly available BraTS2020 dataset, yielding promising results characterized by high accuracy and dice similarity coefficient scores.<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_49.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_65.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_65"></div>  <a href="../papers/MSCC2024_paper_65.pdf"> 
+                       [65] Decadal Trends in Smart Healthcare: A Bibliometric Review of Smart City Innovations  
+                    </a> 
+                    <p> 
+                      LAFRAXO, Mohammed Amine*; Soulaymani, Abdelmajid ; Hami, Hinde 
+                    </p>  
+                    <div id="footter00065">
+                        <a class="btn btn-default btnView" href="#collapse-form00065" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form00065"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_65.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form00065"> 
+                            In recent years, the smart cities concept has witnessed significant expansion globally, with particular attention given to the healthcare sector. This evolution is closely associated with the emergence and increasing integration of technologies such as artificial intelligence, the Internet of Medical Things(IoMT), cloud computing, and telemedicine. This study aims to analyze research trends in smart cities and healthcare over the past decade. To achieve this, we utilized the Scopus database to extract relevant information from a carefully curated corpus of 930 articles. Our analysis focuses on identifying key scientific journals, as well as the most cited articles. Our findings reveal a notable growth trend in publications and identify the top ten journals specialized in the selected field, such as IEEE Access, while also unveiling the most cited articles. Keyword co-occurrence analysis was conducted using the RStudio tool and the R programming language. This study offers valuable insights to encourage ongoing innovation in the field of healthcare.<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_65.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_70.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_70"></div>  <a href="../papers/MSCC2024_paper_70.pdf"> 
+                       [70] Enhancing Breast Cancer Detection Through Automated Classification with ‎Optimized CNN Hyperparameters  
+                    </a> 
+                    <p> 
+                      aguerchi, khadija*; Jabrane , Younes; Habba, Maryam 
+                    </p>  
+                    <div id="footter00070">
+                        <a class="btn btn-default btnView" href="#collapse-form00070" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form00070"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_70.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form00070"> 
+                            Breast cancer, a prevalent affliction among women, underscores the critical importance of early detection, which significantly enhances survival rates and treatment efficacy across all cancer types. Advances in screening and treatment modalities have notably reduced breast cancer mortality by 30%. Convolutional neural networks (CNNs) have emerged as powerful tools for diverse applications due to their ability to automatically extract image features and perform classification tasks. Various strategies have been explored to bolster the precision of deep CNNs. This paper investigates the use of particle swarm optimization (PSO) to fine-tune CNN hyperparameters for automated breast cancer image classification. A model is developed for automated classification based on magnification levels, distinguishing between benign and malignant samples. Individual models are trained with optimized hyperparameters corresponding to different image magnifications ‎‎(40x, 100x, 200x, and 400x). The dataset is partitioned into 80% for training and 20% for testing. Performance evaluation ‎metrics including Accuracy, Precision, Recall, and F1-score are utilized to select the most effective model for automation. ‎Experimental findings affirm the efficacy of our proposed approach in achieving favorable outcomes.‎<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_70.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_83.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_83"></div>  <a href="../papers/MSCC2024_paper_83.pdf"> 
+                       [83] Multi parameter Multilevel (MPML) Based Trust Management System for Healthcare  
+                    </a> 
+                    <p> 
+                      Ahire, Bhawana A*; Sakhare, Dr.S. R. 
+                    </p>  
+                    <div id="footter00083">
+                        <a class="btn btn-default btnView" href="#collapse-form00083" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form00083"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_83.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form00083"> 
+                            Resounding extension of the Internet of Things (IoT) has garnered substantial attention from the scientific community over the last two decades. The infusion of IoT has intricately connected our world, endowing intelligent devices with the finesse to adeptly perform daily tasks. Swift technological progress in this arena foreshadows the continued evolution of diverse smart applications, ranging from intelligent healthcare and homes to futuristic cities. Nevertheless, the surge in interconnected nodes within the expansive IoT network brings forth a formidable scalability concern, given the heterogeneity of these nodes in terms of processing power, energy consumption, and capacity.
+Conventional security measures, while crucial, fall short in effectively safeguarding these intricate smart applications. Addressing this exigency, the role of trust becomes paramount in mitigating the vulnerabilities that arise when IoT nodes interlink with the digital realm. Amidst this backdrop, diverse trust models, spanning direct, indirect, and hybrid trust computation methods, have been proposed for trust management. However, these models often grapple with adapting comprehensively to the dynamic and ever-evolving nature of intelligent IoT systems. In response, the proposed system introduces a sophisticated three-tiered approach: Trust Calculation, Propagation, and modification. Centerpiece of the system is a meticulously crafted trust calculation algorithm, bespoke for IoT devices. This algorithm harmoniously integrates considerations of both direct and indirect trust, underpinned by a multi-parameter multilevel trust calculation framework. The overarching aim is to attain the pinnacle of precision in evaluating the trustworthiness intrinsic to this intricate IoT landscape.<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_83.pdf------------------------------- --> 
+            <h1 class="text-center">Session 7  &#8211; Smart Health  <br/><b class="text-center"> -- Poster --</b></h1>
+<!----------------------- Start MSCC2024_paper_53.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_53"></div>  <a href="../papers/MSCC2024_paper_53.pdf"> 
+                       [53] Exploration of School Orientation using Principal Component Analysis (PCA): An Analytical Approach  
+                    </a> 
+                    <p> 
+                      Noaman, Lakchouch *; Lamarti Sefian, Mohammed 
+                    </p>  
+                    <div id="footter00053">
+                        <a class="btn btn-default btnView" href="#collapse-form00053" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form00053"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_53.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form00053"> 
+                            This analysis aims to employ principal component analysis to evaluate the academic performance of students in four subjects: mathematics, physics, French, and English. Axis 1 reflects overall performance, with positive scores indicating high levels of achievement in all subjects, and negative scores reflecting lower performance. Axis 2 reveals a contrast between literary and scientific skills, particularly between French and mathematics. These results highlight distinct learning profiles and could guide targeted pedagogical interventions.
+
+Keywords— Principal Component Analysis (PCA); Cross-disciplinary Correlation ; Multidimensional Assessment;
+<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_53.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_59.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_59"></div>  <a href="../papers/MSCC2024_paper_59.pdf"> 
+                       [59] Enhancing Road Safety: Automated Traffic Violation Detection and Counting System Using YOLO Algorithm  
+                    </a> 
+                    <p> 
+                      CHAREF, ayoub*; JARIR, zahi; Quafafou, Mohamed 
+                    </p>  
+                    <div id="footter00059">
+                        <a class="btn btn-default btnView" href="#collapse-form00059" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form00059"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_59.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form00059"> 
+                            Ensuring compliance with traffic regulations, such as wearing helmets and obeying traffic signals, is crucial for enhancing road safety, particularly among motorcycle riders. In this study, we propose an automated approach for detecting helmet-wearing and traffic light violations using computer vision techniques. Our methodology involves leveraging the YOLO-v8 object detection model pretrained on the COCO dataset to identify motorcycles, persons, traffic lights, and helmets in video footage captured at intersections in Marrakech. We conducted manual counting as a benchmark for evaluating the performance of our automated system. Our results demonstrate a strong alignment between our automated approach and manual counting for both helmet detection and traffic light violations. However, occasional discrepancies were observed, particularly during specific time slots characterized by high motorcycle speeds. Contextual factors such as traffic density and vehicle speed were identified as influencing factors. Despite these challenges, our automated system shows promise as a valuable tool for monitoring and enforcing traffic regulations. Ongoing refinement and optimization are essential to address these challenges and enhance the accuracy and reliability of automated detection systems. Our study highlights the potential of automated technologies in improving road safety measures and underscores the importance of considering contextual factors in interpreting detection results.<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_59.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_81.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_81"></div>  <a href="../papers/MSCC2024_paper_81.pdf"> 
+                       [81] Long-range, low-power for IoT devices: The  LoRa Network a review  
+                    </a> 
+                    <p> 
+                      BOUGADDOU, HASNAA*; CHERKAOUI, NAZHA; MOUHIB, OMAR 
+                    </p>  
+                    <div id="footter00081">
+                        <a class="btn btn-default btnView" href="#collapse-form00081" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form00081"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_81.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form00081"> 
+                            — The Internet of Things (IoT) changes our ability to 
+connect and interact with the physical world by integrating 
+different objects into the internet. By all the many Low Power 
+Wide Area network (LPWAN) technologies, LoRa (Long-Range 
+Radio) stands out for its long-range capabilities, low power 
+consumption, and robustness that’s why it becomes a crucial 
+component in cost-effective IoT applications such as smart cities, 
+smart homes, smart factories, and smart farming. The purpose of 
+this article is to present an overview of the LPWAN technology 
+especially the LoRa by covering the characteristics, the 
+challenges, and existing strategies.
+<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_81.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_115.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_115"></div>  <a href="../papers/MSCC2024_paper_115.pdf"> 
+                       [115] New Approach: Intelligent System-Based Object Detection in Smart Parking  
+                    </a> 
+                    <p> 
+                      boulaich, Mohamed hamza*; OHAMOUDDOU, SAID; meliani, hibatallah; ennasar, mohammed ali; elafia, abdellatif 
+                    </p>  
+                    <div id="footter000115">
+                        <a class="btn btn-default btnView" href="#collapse-form000115" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form000115"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_115.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form000115"> 
+                            We propose a cutting-edge Internet of Things (IoT)-powered intelligent parking system and employs a Raspberry Pi model-based camera for accurate vehicle detection. A wireless sensor network is used to gather machine-to-machine (M2M) data from the Raspberry Pi and transmit it to the server using the Message Queuing Telemetry Transport (MQTT) communication protocol. The model has been trained using deep learning techniques.<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_115.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_116.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_116"></div>  <a href="../papers/MSCC2024_paper_116.pdf"> 
+                       [116] Intelligent system-based Energy Consumption Monitoring using IoT and Machine Learning  
+                    </a> 
+                    <p> 
+                      boulaich, Mohamed hamza*; OHAMOUDDOU, SAID; meliani, hibatallah; ennasar, mohammed ali; elafia, abdellatif 
+                    </p>  
+                    <div id="footter000116">
+                        <a class="btn btn-default btnView" href="#collapse-form000116" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form000116"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_116.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form000116"> 
+                            This work presents a new approach for intelligent systems to efficiently control and enhance energy consumption in intelligent buildings. We utilize a Raspberry Pi model that is equipped with sensors to establish an Internet of Things (IoT) system for the purpose of detecting and quantifying the temperature within the building. Then transport these data into the server using the efficient communication technology MQTT. In order to calculate energy consumption, we utilize a range of machine learning methods such as Random Forest, Gradient Boosting, MLP Regressor, K-neighbors, Decision Tree, Support Vector Regression, Ridge, Linear Regression, Lasso, and ElasticNet. To determine who is the best model of ML, we employ evaluation measures such as MAE, MSE, RMSE, and R-squared. The RF offers the best prediction performance with high accuracy.<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_116.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_129.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_129"></div>  <a href="../papers/MSCC2024_paper_129.pdf"> 
+                       [129] Low-Cost Real-Time Fire Detection in Smart Cities: Leveraging AI and IoT  
+                    </a> 
+                    <p> 
+                      OHAMOUDDOU, SAID*; boulaich, Mohamed hamza; MELIANI, Hibatallah; Ennasar , Mohammed Ali; El Afia , Abdellatif 
+                    </p>  
+                    <div id="footter000129">
+                        <a class="btn btn-default btnView" href="#collapse-form000129" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form000129"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_129.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form000129"> 
+                            While fire has historically served crucial roles in human
+society, its position is evolving in modern, electricity-
+dependent smart cities. Paradoxically, the risk of fire has
+escalated due to variables including increased electrical
+device usage and wiring density. This necessitates the
+development of speedy and efficient fire detection systems.
+This research presents a low-cost Internet of Things (IoT)
+based solution for real-time fire detection employing deep
+learning. Our approach leverages a pre-trained VGG16
+convolutional neural network (CNN) for feature extraction,
+followed by classification utilizing multiple machine learning
+methods like Support Vector Machines (SVM), Random
+Forests, and others. Importantly, SVM achieved the highest
+accuracy of 98.9% in classifying fire and non-fire scenarios.
+Upon fire detection, the system triggers SMS alerts to
+relevant authorities. This integrated method promises to
+provide a timely and reliable response to fire breakouts,
+boosting public safety and infrastructure protection in smart
+cities, all while retaining an emphasis on cost-effectiveness.<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_129.pdf------------------------------- --> 
+<!----------------------- Start MSCC2024_paper_132.pdf------------------------------- --> 
+  <div class="dividers"></div>
+            <div class="row"> 
+                <div class="col-xs-11 col-xs-offset-1"> 
+                  <div id="paper_132"></div>  <a href="../papers/MSCC2024_paper_132.pdf"> 
+                       [132] Smart Grid Security: Innovative Approaches for Threat Detection and Countermeasures  
+                    </a> 
+                    <p> 
+                      Bhadani, Ujas* 
+                    </p>  
+                    <div id="footter000132">
+                        <a class="btn btn-default btnView" href="#collapse-form000132" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form000132"> 
+                            <i class="glyphicon glyphicon-eye-open"></i> 
+                            Abstract
+                         </a> 
+                        <a href="../papers/MSCC2024_paper_132.pdf" class="btn btn-default btnDownload">
+                            <i class="glyphicon glyphicon-cloud-download"></i> 
+                            Full paper 
+                         </a>
+                         <p class="collapse text-justify" id="collapse-form000132"> 
+                            Electric power networks are now more susceptible to cyberattacks due to their increased interconnectivity and digitization. The security of smart grid systems and the effects of cyberattacks on system functionality and operations are consequently raising concerns. The types, frequency, and effects of cyber assaults on smart grid systems are covered in this study, along with an overview of how they affect system performance. In the following survey, numerous defense tactics and strategies are also covered that can be used to lessen the danger of cyberattacks on smart grid systems. This study offers a thorough assessment of the state of cyber security in smart grid systems today and emphasizes the need for increased awareness and financial support for cyber security measures to safeguard these vital infrastructure components.<br> <!--b> Keywords:</b> <i>0.0--></i>
+                        </p> 
+                     </div> 
+                 </div> 
+             </div>	
+<!----------------------- End MSCC2024_paper_132.pdf------------------------------- --> 
+ 	<hr/>
+        </div>
+        <!-- <div class="col-xs-2">
+            <div class="panel evf">
+                <div class="panel-heading evf-h">
+                    
+                </div>
+        </div> -->
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="sponcor">
+        <img src="assets/img/footerpart1.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart2.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart3.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart4.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart5.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart6.png" class="img-responsive" alt="logo"/>
+    </div>
+</div>
+
+<div class="copyright navbar-fixed-bottom">
+    <i class="glyphicon glyphicon-copyright-mark"></i> All Rights Reserved. 
+    <a href="http://med-space.org/irsec17/"><i class="glyphicon glyphicon-globe"></i> IEEE</a>
+</div>
+<script src="bootstrap/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/holder.js"></script>
+<script src="assets/js/slidown.js"></script>
+<script type="text/javascript">
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+            $('#custom-nav').addClass('affix');
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $('#custom-nav').removeClass('affix');
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> MSCC2024 - Session 2  &#8211; Advanced Technologies for Smart Urban Environments</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main2.css" rel="stylesheet">
+    <link href="assets/css/carousel.css" rel="stylesheet">
+    <link rel="SHORTCUT ICON" href="assets/img/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+<!-- Navigation -->
+<nav id="custom-nav" class="navbar navbar-default navbar-fixed-top navigation" role="navigation">
+    <div class="container navigation-container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header navigation-header">
+            <a class="navbar-brand navigation-logo" href="../index.html"><img src="assets/img/head.png" class="img-con img-responsive" alt="logo"  /></a>
+        </div>
+        
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <!-- <div class="col-xs-3">
+            <ul class="nav nav-pills nav-stacked side-bare side-bare-hom">
+
+           		<li class="panel collapse">
+                    <a href="topics.html" class="dropdown-toggle panel-heading sildDown-togel"   aria-expanded="false" aria-controls="collapse-formTopics">Topics</a>
+                    
+                </li>
+
+
+
+				
+                <li class="panel collapse">
+                    <a href="#collapse-formWork" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formWork" onclick="changeIcon()">Panels<i id="icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formWork" role="menu">
+                        <li><a href="panel-1.html">&nbsp;&nbsp;P1:&nbsp;Smart Strategies for Resilient Cities</a></li>
+                        <li><a href="panel-2.html">&nbsp;&nbsp;P2:&nbsp;ICESCO SC initiatives</a></li>
+                        <li><a href="panel-3.html">&nbsp;&nbsp;P3:&nbsp;Smart City Water Sustainability</a></li>
+                        <li><a href="panel-4.html">&nbsp;&nbsp;P4:&nbsp;Empowering Smart City Applications</a></li>
+                        <li><a href="panel-5.html">&nbsp;&nbsp;P5:&nbsp;Morocco's Smart City Initiatives</a></li>
+                    </ul>
+                </li>
+
+                <li class="panel collapse">
+                    <a href="#collapse-formSpecialSessions" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formSpecialSessions" onclick="changeIcon2()">Sessions<i id="session-icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse in" id="collapse-formSpecialSessions" role="menu">
+                        <li><a href="Session-1.html">&nbsp;&nbsp;Session 1&nbsp;</a></li>
+                        <li class="activ"><a href="Session-2.html">&nbsp;&nbsp;Session 2&nbsp;</a></li>
+                        <li><a href="Session-3.html">&nbsp;&nbsp;Session 3&nbsp;</a></li>
+                        <li><a href="Session-4.html">&nbsp;&nbsp;Session 4&nbsp;</a></li>
+                        <li><a href="Session-5.html">&nbsp;&nbsp;Session 5&nbsp;</a></li>
+                        <li><a href="Session-6.html">&nbsp;&nbsp;Session 6&nbsp;</a></li>
+                        <li><a href="Session-7.html">&nbsp;&nbsp;Session 7&nbsp;</a></li>
+                    </ul>
+                </li>
+
+
+
+
+
+
+                <li class="panel collapse">
+                    <a href="hackathon.html">Hackathon</a>
+                </li>
+
+
+
+                <li class="panel collapse">
+                    <a href="#collapse-formSess" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formSess" onclick="changeIcon4()">Submissions<i id="submissions" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formSess" role="menu">
+
+                        <li><a href="session-w1.html">&nbsp;&nbsp;Submissions W1</a></li>
+                        <li><a href="session-w2.html">&nbsp;&nbsp;Submissions W2</a></li>
+                        <li><a href="session-w3.html">&nbsp;&nbsp;Submissions W3</a></li>
+                        <li><a href="session-w4.html">&nbsp;&nbsp;Submissions W4</a></li>
+                        <li><a href="session-w5.html">&nbsp;&nbsp;Submissions W5</a></li>
+                        
+                        <li> <div class="dividers2"></div> </li>   
+
+                        <li><a href="special_session-1.html">&nbsp;&nbsp;Submissions SS1</a></li>
+                        <li><a href="special_session-2.html">&nbsp;&nbsp;Submissions SS2</a></li>
+                        <li><a href="special_session-3.html">&nbsp;&nbsp;Submissions SS3</a></li>
+                        <li><a href="special_session-4.html">&nbsp;&nbsp;Submissions SS4</a></li>
+                                             
+                    </ul>
+                </li>
+
+                
+
+	       <li class="panel collapse">
+                    <a href="#collapse-formCom" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formCom"  onclick="changeIcon3()">Committees<i  id="committee-icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formCom" role="menu">
+                     
+                        <li><a href="Chairs.html">&nbsp;&nbsp;Conference Chairs </a></li>
+			             <li><a href="TechnicalProgramCommittee.html">&nbsp;&nbsp;Technical&nbsp;Program&nbsp;Committee </a></li>
+                        <li><a href="OrganizingCommittee.html">&nbsp;&nbsp;Local&nbsp;Organizing&nbsp;Committee</a></li>
+                     </ul>
+                </li>
+
+                
+				<li class="panel collapse">
+                    <a href="../files/MSCC2024-Program.pdf" class="dropdown-toggle panel-heading sildDown-togel"   aria-expanded="false" aria-controls="collapse-formProg">Program&nbsp;(pdf)</a>
+                    
+                </li>
+
+
+            </ul>
+            <script>
+                function changeIcon() {
+                    var icon = document.getElementById('icon');
+                    if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                        icon.classList.remove('glyphicon-triangle-bottom');
+                        icon.classList.add('glyphicon-triangle-top');
+                    } else if (icon.classList.contains('glyphicon-triangle-top')){
+                        icon.classList.remove('glyphicon-triangle-top');
+                        icon.classList.add('glyphicon-triangle-bottom');
+                    }
+                }
+                function changeIcon2() {
+                    var icon = document.getElementById('session-icon');
+                    if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                        icon.classList.remove('glyphicon-triangle-bottom');
+                        icon.classList.add('glyphicon-triangle-top');
+                    } else if (icon.classList.contains('glyphicon-triangle-top')){
+                        icon.classList.remove('glyphicon-triangle-top');
+                        icon.classList.add('glyphicon-triangle-bottom');
+                    }
+                }
+                function changeIcon3() {
+                    var icon = document.getElementById('committee-icon');
+                    if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                        icon.classList.remove('glyphicon-triangle-bottom');
+                        icon.classList.add('glyphicon-triangle-top');
+                    } else if (icon.classList.contains('glyphicon-triangle-top')){
+                        icon.classList.remove('glyphicon-triangle-top');
+                        icon.classList.add('glyphicon-triangle-bottom');
+                    }
+                }
+
+            </script>
+        </div> -->
+        <div class="col-xs-4">
+            <ul class="menuUL nav nav-pills nav-stacked side-bare side-bare-hom">
+
+                <li class="panel collapse">
+                    <a href="topics.html" class="dropdown-toggle panel-heading sildDown-togel"   aria-expanded="false" aria-controls="collapse-formTopics">Topics</a>
+                    
+                </li>
+                <li class="panel collapse">
+                    <a href="#collapse-formWork" class="dropdown-toggle panel-heading sildDown-togel" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formWork" onclick="changeIcon()">Panels<i id="icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formWork" role="menu">
+                        
+                        <li><a href="panel-1.html">&nbsp;&nbsp;P1:&nbsp;Smart Strategies for Resilient Cities</a></li>
+                        <div class="dividers2"></div>  
+                        <li><a href="panel-2.html">&nbsp;&nbsp;P2:&nbsp;ICESCO SC initiatives</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="panel-3.html">&nbsp;&nbsp;P3:&nbsp;Smart City Water Sustainability</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="panel-4.html">&nbsp;&nbsp;P4:&nbsp;Empowering Smart City Applications</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="panel-5.html">&nbsp;&nbsp;P5:&nbsp;Morocco's Smart City Initiatives</a></li>
+                    </ul>
+                </li>
+                <li class="panel collapse">
+                    <a href="#collapse-formSpecialSessions" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formSpecialSessions" onclick="changeIcon2()">Sessions<i id="session-icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse in" id="collapse-formSpecialSessions" role="menu">
+                        <li><a href="Session-1.html">&nbsp;&nbsp;Session 1&nbsp;</a></li>
+                        <div class="dividers2"></div> 
+                        <li class="activ"><a href="Session-2.html">&nbsp;&nbsp;Session 2&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-3.html">&nbsp;&nbsp;Session 3&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-4.html">&nbsp;&nbsp;Session 4&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-5.html">&nbsp;&nbsp;Session 5&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-6.html">&nbsp;&nbsp;Session 6&nbsp;</a></li>
+                        <div class="dividers2" ></div> 
+                        <li><a href="Session-7.html">&nbsp;&nbsp;Session 7&nbsp;</a></li>
+                    </ul>
+                </li>
+                
+                <li class="panel collapse">
+                    <a href="#collapse-formSess" class="dropdown-toggle panel-heading sildDown-togel"  data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formSess" onclick="changeIcon4()">Submissions<i id="submissions" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formSess" role="menu">
+
+                        <li><a href="submission-s1.html">&nbsp;&nbsp;Submissions S1</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s2.html">&nbsp;&nbsp;Submissions S2</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s3.html">&nbsp;&nbsp;Submissions S3</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s4.html">&nbsp;&nbsp;Submissions S4</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s5.html">&nbsp;&nbsp;Submissions S5</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s6.html">&nbsp;&nbsp;Submissions S6</a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="submission-s7.html">&nbsp;&nbsp;Submissions S7</a></li>             
+                    </ul>
+                </li>
+
+                <li class="panel collapse">
+                    <a href="hackathon.html">Hackathon</a>
+                </li>
+                
+        
+                <li class="panel collapse">
+                    <a href="#collapse-formCom" class="dropdown-toggle panel-heading sildDown-togel" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-formCom" onclick="changeIcon3()">Committees<i id="committee-icon" class="glyphicon glyphicon-triangle-bottom pull-right"></i></a>
+                    <ul class="list-unstyled ildDown-menu collapse" id="collapse-formCom" role="menu">
+                        <li><a href="Chairs.html">&nbsp;&nbsp;Conference Chairs </a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="TechnicalProgramCommittee.html">&nbsp;&nbsp;Technical Program Committee </a></li>
+                        <div class="dividers2"></div> 
+                        <li><a href="OrganizingCommittee.html">&nbsp;&nbsp;Local Organizing Committee</a></li>
+                    </ul>
+                </li>
+        
+
+        
+                <li class="panel collapse">
+                    <a href="../files/MSCC2024-Program.pdf" class="dropdown-toggle panel-heading sildDown-togel" aria-expanded="false" aria-controls="collapse-formProg">Program&nbsp;(pdf)</a>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <script>
+            function changeIcon() {
+                var icon = document.getElementById('icon');
+                if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                    icon.classList.remove('glyphicon-triangle-bottom');
+                    icon.classList.add('glyphicon-triangle-top');
+                } else if (icon.classList.contains('glyphicon-triangle-top')){
+                    icon.classList.remove('glyphicon-triangle-top');
+                    icon.classList.add('glyphicon-triangle-bottom');
+                }
+            }
+            function changeIcon2() {
+                var icon = document.getElementById('session-icon');
+                if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                    icon.classList.remove('glyphicon-triangle-bottom');
+                    icon.classList.add('glyphicon-triangle-top');
+                } else if (icon.classList.contains('glyphicon-triangle-top')){
+                    icon.classList.remove('glyphicon-triangle-top');
+                    icon.classList.add('glyphicon-triangle-bottom');
+                }
+            }
+            function changeIcon3() {
+                var icon = document.getElementById('committee-icon');
+                if (icon.classList.contains('glyphicon-triangle-bottom')) {
+                    icon.classList.remove('glyphicon-triangle-bottom');
+                    icon.classList.add('glyphicon-triangle-top');
+                } else if (icon.classList.contains('glyphicon-triangle-top')){
+                    icon.classList.remove('glyphicon-triangle-top');
+                    icon.classList.add('glyphicon-triangle-bottom');
+                }
+            }
+
+        </script>
+        
+        <div class="content col-xs-8">  
+
+<!------------------ Start Body  Session 2 ------------------------------------>
+<h1 class="text-center"> Session 1 : Advanced Technologies for Smart Urban Environments </h1>
+<div class="dividers"></div> 
+<ul class="session-1">
+    <li>Cyber Security for Smart Cities</li>
+    <li>Data Analytics for Smart Cities</li>
+    <li>Digital Transformation</li>
+    <li>Digital Inclusion</li>
+    <li>PROCESS MINING</li>
+    <li>Artificial Intelligence</li>
+    <li>Computational Thinking</li>
+</ul>
+
+
+
+<div class="dividers"></div> 
+<h3 class="text-center">Keynote speakers:</h3>
+<div class="dividers"></div>
+<!----------------------- Start Prof. Saifur Rahman------------------------------- --> 
+       <div class="sub"> 
+         <div class="row"> 
+             <div class="col-xs-2"> 
+                 <img src="assets/img/keynotes/IRSEC21-Saifur-Rahman.jpg" class="img-responsive img-circle" width="150" height="120" alt=""/> 
+             </div> 
+             <div class="col-xs-10"> 
+                 <a href="https://www.med-space.org/irsec21/saifur-rahman"> 
+                     Role of the Smart Grid in Facilitating the Integration of Renewables 
+                 </a> 
+                 <p> 
+                   <b>Prof. Saifur Rahman</b> - IEEE President-elect 2022 | Director, Virginia Tech Advanced Research Institute, USA. 
+                 </p> 
+             </div> 
+             <div id="footter10"> 
+                 <a class="btn btn-default btnView" href="#collapse-form10" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form10"> 
+                     <i class="glyphicon glyphicon-eye-open"></i> 
+                     Abstract 
+                 </a> 
+                 <a class="btn btn-default btnDownload" href="#collapse-form11" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form11"> 
+                     <i class="glyphicon glyphicon-eye-open"></i> 
+                     Biography 
+                 </a> 
+                 <p class="collapse text-justify" id="collapse-form10"> 
+                     <b>Abstract:</b><br>With the focus on environmental sustainability and energy security, power system planners are looking at renewable energy as supplements and alternatives. But such generation sources have their own challenges &#8211; primarily intermittency. It is expected that the smart grid – due to its inherent communication, sensing and control capabilities – will have the ability to manage the load, storage and generation assets (including renewables) in the power grid to enable a large-scale integration of distributed generation. In a smart grid, information about the state of the grid and its components can be exchanged quickly over long distances and complex networks. It will therefore be possible to have the integration of sustainable energy sources, such as wind, solar, off-shore electricity, etc. for smoother system operation. But in order for this to be possible, the electric utility will have to evolve, and change their ways of operation to become an intelligent provider of these services. This lecture introduces the operational characteristics of renewable energy sources, and various aspects of the smart grid &#8211; technology, standards and regulations. It also addresses the interplay among distributed generation, storage and conventional generation to provide an efficient operational strategy in the context of the smart grid. 
+  	         </p> 
+                 <p class="collapse text-justify" id="collapse-form11"> 
+                    <b>Biography:</b><br>Professor Saifur Rahman is the founding director of the Advanced Research Institute at Virginia Tech, USA where he is the Joseph R. Loring professor of electrical and computer engineering. He also directs the Center for Energy and the Global Environment. He is a Life Fellow of the IEEE and an IEEE Millennium Medal winner. He was the president of the IEEE Power and Energy Society (PES) for 2018 and 2019. He was the founding editor-in-chief of the IEEE Electrification Magazine and the IEEE Transactions on Sustainable Energy. He has served as the chair of the US National Science Foundation Advisory Committee for International Science and Engineering. He has published over 150 journal papers and has made over six hundred conference and invited presentations. In 2006 he served on the IEEE Board of Directors as the vice president for publications. He is a distinguished lecturer for the IEEE Power &amp; Energy Society and has lectured on renewable energy, energy efficiency, smart grid, energy internet, blockchain, IoT sensor integration, etc. 
+                 </p> 
+             </div> 
+             <div class="dividers"></div> 
+         </div> 
+     </div>   	
+ <!----------------------- End Prof. Saifur Rahman------------------------------- --> 
+<!----------------------- Start Mr. John D. McDonald------------------------------- --> 
+       <div class="sub"> 
+         <div class="row"> 
+             <div class="col-xs-2"> 
+                 <img src="assets/img/keynotes/IRSEC21-John-McDonald.jpg" class="img-responsive img-circle" width="150" height="120" alt=""/> 
+             </div> 
+             <div class="col-xs-10"> 
+                 <a href="https://www.med-space.org/irsec21/john-mcdonald"> 
+                     Grid Modernization: Technological Advancements Beyond Smart Grid 
+                 </a> 
+                 <p> 
+                   <b>Mr. John D. McDonald</b> - (IEEE Life Fellow), Smart Grid Business Development Leader, GE Renewable Energy, Atlanta 
+                 </p> 
+             </div> 
+             <div id="footter12"> 
+                 <a class="btn btn-default btnView" href="#collapse-form12" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form12"> 
+                     <i class="glyphicon glyphicon-eye-open"></i> 
+                     Abstract 
+                 </a> 
+                 <a class="btn btn-default btnDownload" href="#collapse-form13" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form13"> 
+                     <i class="glyphicon glyphicon-eye-open"></i> 
+                     Biography 
+                 </a> 
+                 <p class="collapse text-justify" id="collapse-form12"> 
+                     <b>Abstract:</b><br>This talk will familiarize participants with a vision for Grid Modernization, focusing on technological advancements beyond Smart Grid. The technological advancements include discussions of key industry/societal trends, Smart Grid concepts, holistic solutions, integration of microgrids and distributed generation, and Advanced Distribution Management System (ADMS) software applications. The talk will also cover feeder automation business models, managing different types of data, big data, analytics, enterprise data management, Smart Grid standards and interoperability, and Smart Grid deployments and lessons learned. 
+  	         </p> 
+                 <p class="collapse text-justify" id="collapse-form13"> 
+                    <b>Biography:</b><br>John D. McDonald, P.E., is Smart Grid Business Development Leader for GE’s Grid Solutions business. John has 47 years of experience in the electric utility transmission and distribution industry. John received his B.S.E.E. and M.S.E.E. (Power Engineering) degrees from Purdue University, and an M.B.A. (Finance) degree from the University of California-Berkeley. John is a Life Fellow of IEEE (member for 50 years), and was awarded the IEEE Millennium Medal, the IEEE Power &amp; Energy Society (PES) Excellence in Power Distribution Engineering Award, the IEEE PES Substations Committee Distinguished Service Award, the IEEE PES Meritorious Service Award, the 2016 CIGRE Distinguished Member Award, the 2016 CIGRE USNC Attwood Associate Award, and the 2021 CIGRE Honorary Member Award. John is Past President of the IEEE PES, the VP for Technical Activities for the US National Committee (USNC) of CIGRE, the Past Chair of the IEEE PES Substations Committee, and the IEEE Division VII Past Director. John was on the Board of Governors of the IEEE-SA (Standards Association), is an IEEE Foundation Director, and is a Founding Board Member and Treasurer of the Smart Energy Consumer Collaborative (SECC). John received the 2009 Outstanding Electrical and Computer Engineer Award from Purdue University. John teaches a Smart Grid course at the Georgia Institute of Technology, a Smart Grid course for GE, and Smart Grid courses for various IEEE PES local chapters as an IEEE PES Distinguished Lecturer (since 1999). John has published one hundred fifty papers and articles, has co-authored five books and has one US patent. 
+                 </p> 
+             </div> 
+             <div class="dividers"></div> 
+         </div> 
+     </div>   	
+ <!----------------------- End Mr. John D. McDonald------------------------------- --> 
+<!----------------------- Start Prof. Hassan Bevrani------------------------------- --> 
+       <div class="sub"> 
+         <div class="row"> 
+             <div class="col-xs-2"> 
+                 <img src="assets/img/keynotes/IRSEC21-Hassan-Bevrani.jpg" class="img-responsive img-circle" width="150" height="120" alt=""/> 
+             </div> 
+             <div class="col-xs-10"> 
+                 <a href="https://www.med-space.org/irsec21/hassan-bevrani"> 
+                     Virtual Dynamics Shaping in Renewable Integrated Power Grids 
+                 </a> 
+                 <p> 
+                   <b>Prof. Hassan Bevrani</b> - Smart/Micro Grids Research Center, University of Kurdistan 
+                 </p> 
+             </div> 
+             <div id="footter14"> 
+                 <a class="btn btn-default btnView" href="#collapse-form14" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form14"> 
+                     <i class="glyphicon glyphicon-eye-open"></i> 
+                     Abstract 
+                 </a> 
+                 <a class="btn btn-default btnDownload" href="#collapse-form15" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-form15"> 
+                     <i class="glyphicon glyphicon-eye-open"></i> 
+                     Biography 
+                 </a> 
+                 <p class="collapse text-justify" id="collapse-form14"> 
+                     <b>Abstract:</b><br>A key solution in response to the challenge of economical harvesting of electrical energy and considering the environmental issues, could be to integrate more and more distributed generators (DGs) and renewable energy sources (RESs) in the electric network. However, recent studies have investigated that relatively high DGs/RESs integration will have some negative impacts on power grid dynamics, power quality, frequency control, voltage regulation, as well as other control and operation issues. In consequence, this challenge significantly limits the rate of renewable power penetration as well as overall system stability margin. Decreasing system inertia, increasing uncertainties and highly dynamic variable nature of DGs and RESs are known as the main reasons. These impacts may increase for the dynamically week power grids at the penetration rates that are expected over the next several years.<br />
+An idea towards stabilizing a grid with numerous distributed DGs/RESs is to compensate system inertia and weak dynamics, virtually. This may be established by a primary power source (e.g., DG or an energy storage) together with a smart controlled power electronics inverter/converter. This setup will then operate to emulate desirable dynamics, such as inertia and damping properties, by flexible shaping of its output active and reactive powers. This approach provides a promising solution to improve power grid stability and performance in the presence of a high penetration of DGs/RESs. In this speech, recent advances on power grid dynamics shaping using controlled power inverters will be emphasized. 
+  	         </p> 
+                 <p class="collapse text-justify" id="collapse-form15"> 
+                    <b>Biography:</b><br>Hassan Bevrani received PhD degree in electrical engineering from Osaka University in 2004. He is a full professor and the Program Leader of Micro/Smart Grids Research Center (SMGRC) at the University of Kurdistan. Over the years, he has worked with Osaka University, Kumamoto University, Doshisha University, Nagoya University (Japan), Queensland University of Technology (Australia), Kyushu Institute of Technology, Centrale Lille (France), and Technical University of Berlin (Germany). Currently, he is a visiting professor at the Osaka University and experienced research fellow of AvH foundation. He is the author of 7 international books, 15 book chapters, and more than 350 journal/conference papers. He has been the gust editor of 4 volumes of Elsevier Energy Procedia and Energy Reports journals. His current research interests include Smart grid operation and control, power system stability, Microgrid dynamics and control, and Intelligent/robust control applications in power electric industry. 
+                 </p> 
+             </div> 
+             <div class="dividers"></div> 
+         </div> 
+     </div>   	
+ <!----------------------- End Prof. Hassan Bevrani------------------------------- --> 
+ 	<hr/>
+        </div>
+        <!-- <div class="col-xs-2">
+            <div class="panel evf">
+                <div class="panel-heading evf-h">
+                    
+                </div>
+        </div> -->
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="sponcor">
+        <img src="assets/img/footerpart1.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart2.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart3.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart4.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart5.png" class="img-responsive" alt="logo"/>
+        <img src="assets/img/footerpart6.png" class="img-responsive" alt="logo"/>
+    </div>
+</div>
+
+<div class="copyright navbar-fixed-bottom">
+    <i class="glyphicon glyphicon-copyright-mark"></i> All Rights Reserved. 
+    <a href="http://med-space.org/irsec17/"><i class="glyphicon glyphicon-globe"></i> IEEE</a>
+</div>
+<script src="bootstrap/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/holder.js"></script>
+<script src="assets/js/slidown.js"></script>
+<script type="text/javascript">
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+            $('#custom-nav').addClass('affix');
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $('#custom-nav').removeClass('affix');
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    });
+</script>
+</body>
+</html>
+
